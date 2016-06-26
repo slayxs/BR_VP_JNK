@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="345.0" maxWidth="700" minHeight="345.0" minWidth="590.0" prefHeight="345.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ButtonBar layoutX="66.0" layoutY="167.0" prefHeight="58.0" prefWidth="474.0">
+            <buttons>
+                <Button fx:id="plusbutton" mnemonicParsing="false" onMouseClicked="#Addieren" prefHeight="26.0" prefWidth="127.0" text="Addieren" />
+                <Button fx:id="minusbutton"  layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#Subtrahieren" text="Subtrahieren" />
+                <Button fx:id="malbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#Dividieren" text="Dividieren" />
+                <Button fx:id="teilbutton"  layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#Multiplizieren" text="Multiplizieren" />
+            </buttons>
+        </ButtonBar>
+        <TextField fx:id="zaehler1" layoutX="84.0" layoutY="84.0" text="" />
+        <TextField fx:id="nenner1" layoutX="84.0" layoutY="119.0" text="" />
+        <TextField fx:id="zaehler2" layoutX="373.0" layoutY="84.0" text="" />
+        <TextField fx:id="nenner2" layoutX="373.0" layoutY="119.0" text="" />
+        <Label fx:id="result" layoutX="100.0" layoutY="275.0" text="Das Ergebnis ist:" />
+        <Label layoutX="441.0" layoutY="45.0" text="Bruch2" />
+        <Label layoutX="31.0" layoutY="89.0" text="Zähler" />
+        <Label layoutX="31.0" layoutY="124.0" text="Nenner" />
+        <Label layoutX="323.0" layoutY="89.0" text="Zähler" />
+        <Label layoutX="323.0" layoutY="124.0" text="Nenner" />
+        <Label layoutX="104.0" layoutY="45.0" text="Bruch1" />
+      <TextField fx:id="resultZ" layoutX="273.0" layoutY="271.0" prefHeight="26.0" prefWidth="55.0" text="0" />
+      <TextField fx:id="resultN" layoutX="273.0" layoutY="303.0" prefHeight="26.0" prefWidth="55.0" text="0" />
+      <Label fx:id="resultDeci" layoutX="354.0" layoutY="275.0" prefHeight="16.0" prefWidth="192.0" text="oder auch :" />
+      <Label layoutX="274.0" layoutY="228.0" prefHeight="127.0" prefWidth="84.0" text="________" />
+    </children>
+</Pane>
