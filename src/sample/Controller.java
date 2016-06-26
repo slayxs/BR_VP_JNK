@@ -19,7 +19,7 @@ public class Controller {
     public Button malbutton;
     public Button teilbutton;
     public Button plusbutton;
-
+//
 
     public int Input1(){
         int Input1 = Integer.parseInt(zaehler1.getText());
