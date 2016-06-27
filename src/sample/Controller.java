@@ -1,6 +1,4 @@
 package sample;
-// Bruchrechner , VP / JNK
-//Imports
 import javafx.event.Event;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
