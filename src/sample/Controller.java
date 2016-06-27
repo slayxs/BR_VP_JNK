@@ -1,12 +1,15 @@
 package sample;
-
+// Bruchrechner , VP / JNK
+//Imports
 import javafx.event.Event;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+//Bruchrechner by VP/JNK
+//Klasse Controller wird definiert
 public class Controller {
 
-
+    //Erstellung von von Objekten (Bezeichnungen identisch mit fx:id's aus dem Stylefile der GUI - sample.fxml)
     public TextField zaehler1 = new TextField("1");
     public TextField nenner1 = new TextField("1");
     public TextField zaehler2 = new TextField("1");
@@ -19,7 +22,8 @@ public class Controller {
     public Button malbutton;
     public Button teilbutton;
     public Button plusbutton;
-//
+
+    //Funktion zum Erfassen des Inhalts der Textfelder - GETTER
 
     public int Input1(){
         int Input1 = Integer.parseInt(zaehler1.getText());
@@ -38,14 +42,14 @@ public class Controller {
         return Input4;
     }
 
-
+    //Methode die beim Event "onMouseClicked" auf Button Addieren ausgeführt wird
     public void Addieren(Event event) {
-        Fract FR1 = new Fract(Input1(), Input2());
-        Fract FR2 = new Fract(Input3(), Input4());
-        FractCalc Add = new FractCalc();
-        int Z1 = Add.Summe(FR1,FR2).zaehler();
-        int N2 = Add.Summe(FR1,FR2).nenner();
-
+        Fract FR1 = new Fract(Input1(), Input2()); //Erstellung des ersten Bruchs
+        Fract FR2 = new Fract(Input3(), Input4()); //Erstellung des zweiten Bruchs
+        FractCalc Add = new FractCalc(); //Neues Objekt aus der Klasse FractCalc wird erstellt
+        int Z1 = Add.Summe(FR1,FR2).zaehler(); // Objekt "Add" wird mit der Funktion "Summe" berechnet - Zähler
+        int N2 = Add.Summe(FR1,FR2).nenner(); // Das selbe wie oben nur für den Nenner
+    //Ausgabe des Ergebnisses
         result.setText("Ergebnis Addition: ");
         resultZ.setText("" + Z1 );
         resultN.setText("" + N2 );

@@ -1,25 +1,24 @@
 package sample;
-
+//Bruchrechner by VP/JNK
+//Erstellung der Klasse FractCalc - diese Klasse beinhaltet die Funktionen für die Berechnung der Brüche
 public class FractCalc
 {
-
+    //Konstruktor
     public FractCalc()
     {
-
     }
 
+    //Fuktion um die Summe zu berechnen, Zwei Brüche müssen mitgegeben werden
     public Fract Summe(Fract bruch1, Fract bruch2)
     {
         int zZaehler, zNenner;
 
-        zZaehler = bruch2.zaehler() * bruch1.nenner() + bruch1.zaehler() * bruch2.nenner();
-        zNenner = bruch2.nenner() * bruch1.nenner();
+        zZaehler = bruch2.zaehler() * bruch1.nenner() + bruch1.zaehler() * bruch2.nenner(); // Mathematische Logik
+        zNenner = bruch2.nenner() * bruch1.nenner(); // Mathematische Logik
+        Fract br = new Fract(zZaehler, zNenner);        //Erzeugen des neuen Bruchs
+        br.kuerze();                                //Methode aus der Klasse Fract zum kuerzen wird aufgerufen
 
-        Fract br = new Fract(zZaehler, zNenner);        //Neuer Bruch wird erzeugt
-
-        br.kuerze();
-
-        return br;
+        return br;  //der addierte und gekürzte Bruch wird returned
     }
 
     public Fract Differenz(Fract bruch1, Fract bruch2)
