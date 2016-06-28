@@ -10,23 +10,23 @@
     <children>
         <ButtonBar layoutX="66.0" layoutY="167.0" prefHeight="58.0" prefWidth="474.0">
             <buttons>
-                <Button fx:id="plusbutton" mnemonicParsing="false" onMouseClicked="#Addieren" prefHeight="26.0" prefWidth="127.0" text="Addieren" />
-                <Button fx:id="minusbutton"  layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#Subtrahieren" text="Subtrahieren" />
-                <Button fx:id="malbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#Dividieren" text="Dividieren" />
-                <Button fx:id="teilbutton"  layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#Multiplizieren" text="Multiplizieren" />
+                <Button fx:id="plusbutton" mnemonicParsing="false" onMouseClicked="#add" prefHeight="26.0" prefWidth="127.0" text="Add" />
+                <Button fx:id="minusbutton"  layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#subtract" text="Subtract" />
+                <Button fx:id="malbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#divide" text="Divide" />
+                <Button fx:id="teilbutton"  layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#multiply" text="Multiply" />
             </buttons>
         </ButtonBar>
         <TextField fx:id="zaehler1" layoutX="84.0" layoutY="84.0" text="" />
         <TextField fx:id="nenner1" layoutX="84.0" layoutY="119.0" text="" />
         <TextField fx:id="zaehler2" layoutX="373.0" layoutY="84.0" text="" />
         <TextField fx:id="nenner2" layoutX="373.0" layoutY="119.0" text="" />
-        <Label fx:id="result" layoutX="100.0" layoutY="275.0" text="Das Ergebnis ist:" />
-        <Label layoutX="441.0" layoutY="45.0" text="Bruch2" />
-        <Label layoutX="31.0" layoutY="89.0" text="Zähler" />
-        <Label layoutX="31.0" layoutY="124.0" text="Nenner" />
-        <Label layoutX="323.0" layoutY="89.0" text="Zähler" />
-        <Label layoutX="323.0" layoutY="124.0" text="Nenner" />
-        <Label layoutX="104.0" layoutY="45.0" text="Bruch1" />
+        <Label fx:id="result" layoutX="100.0" layoutY="275.0" text="The result is:" />
+        <Label layoutX="441.0" layoutY="45.0" text="Fraction2" />
+        <Label layoutX="31.0" layoutY="89.0" text="Numerator" />
+        <Label layoutX="31.0" layoutY="124.0" text="Denominator" />
+        <Label layoutX="323.0" layoutY="89.0" text="Numerator" />
+        <Label layoutX="323.0" layoutY="124.0" text="Denominator" />
+        <Label layoutX="104.0" layoutY="45.0" text="Fraction1" />
       <TextField fx:id="resultZ" layoutX="273.0" layoutY="271.0" prefHeight="26.0" prefWidth="55.0" text="0" />
       <TextField fx:id="resultN" layoutX="273.0" layoutY="303.0" prefHeight="26.0" prefWidth="55.0" text="0" />
       <Label fx:id="resultDeci" layoutX="354.0" layoutY="275.0" prefHeight="16.0" prefWidth="192.0" text="oder auch :" />

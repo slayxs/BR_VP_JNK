@@ -3,13 +3,13 @@ package sample;
 //Erstellung der Klasse FractCalc - diese Klasse beinhaltet die Funktionen für die Berechnung der Brüche
 public class FractCalc
 {
-    //Konstruktor
+    //Default-Konstruktor
     public FractCalc()
     {
     }
 
     //Fuktion um die Summe zu berechnen, Zwei Brüche müssen mitgegeben werden
-    public Fract Summe(Fract bruch1, Fract bruch2)
+    public Fract sum(Fract bruch1, Fract bruch2)
     {
         int zZaehler, zNenner;
 
@@ -21,14 +21,14 @@ public class FractCalc
         return br;  //der addierte und gekürzte Bruch wird returned
     }
 
-    public Fract Differenz(Fract bruch1, Fract bruch2)
+    public Fract differenz(Fract bruch1, Fract bruch2)
     {
-        return Summe( new Fract(bruch1.zaehler(), bruch1.nenner()) ,
+        return sum( new Fract(bruch1.zaehler(), bruch1.nenner()) ,
                 new Fract (-bruch2.zaehler(),bruch2.nenner()));
 
     }
 
-    public Fract Quotient(Fract bruch1, Fract bruch2)
+    public Fract quotient(Fract bruch1, Fract bruch2)
     {
         int zZaehler, zNenner;
 
@@ -36,12 +36,12 @@ public class FractCalc
         zNenner = bruch2.zaehler() * bruch1.nenner();
         Fract br = new Fract(zZaehler, zNenner);
 
-        br.kuerze();
+        //br.kuerze();
 
         return br;
     }
 
-    public Fract Produkt(Fract bruch1, Fract bruch2)
+    public Fract produkt(Fract bruch1, Fract bruch2)
     {
         int zZaehler, zNenner;
 
